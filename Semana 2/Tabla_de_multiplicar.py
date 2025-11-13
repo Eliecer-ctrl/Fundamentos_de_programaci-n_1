@@ -19,5 +19,4 @@ print(num1, "x 7 =", num8)
 print(num1, "x 8 =", num9)
 print(num1, "x 9 =", num10)
 print(num1, "x 10 =", num11)
-
 # Se introduce un valor entero y se multiplica del 1 al 10.

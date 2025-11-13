@@ -4,6 +4,5 @@ def seconds2hms(segundos2):
     minutos = segundos_restantes // 60
     segundos = segundos_restantes % 60
     return horas, minutos, segundos
-
 # Se desarrolla una función que tome como parametro un num que representa los segundos restantes
 # Y se devuelve las horas, minutos y segundos
