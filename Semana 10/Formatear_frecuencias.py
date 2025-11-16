@@ -13,4 +13,4 @@ def format_frecs(data):
 #word:<10: La palabra se alinea a la izquierda (<) dentro de un espacio de 10 caracteres de ancho.
 #:: Se añade un separador de dos puntos.
 #frecuencia:6.2f: La frecuencia porcentual se formatea con un ancho total de 6 caracteres (6), incluyendo el punto decimal, y se muestra con dos decimales (.2f).
-#%: Se añade el símbolo de porcentaje al final.
+#%: Se añade el símbolo de porcentaje al final
