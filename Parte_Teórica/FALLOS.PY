@@ -34,3 +34,126 @@ z = 0
 for i in range(4):
     z += i * i
     # Desarrollo: 14
+
+
+
+tupla1 = (12, 16, 22, 26, 32, 36, 42, 46)
+tupla2 = tupla1[1:-1]
+# Solución: recorre desde 16 al 42
+
+
+x = 1
+y = 0
+nums = [1, 2, 3, 4]
+for num in nums:
+    x *= num
+    y += x
+print(y)
+# Solución: 1 +2 +6 +24 == 33
+
+x = 0
+nums = [2, 4, 6, 8, 10]
+for num in nums:
+    x += num // 2
+print(x)
+Solución:  1 + 2 + 3 + 4 + 5 = 15
+
+
+
+suma = 0
+valores = [[1, 2], [3, 4], [5]]
+for sub in valores:
+    suma += sub[-1]
+print(suma)
+
+# Solución: 11 porque va accediendo al ultmo elemento de cada sublista
+
+
+x = 0
+nums = [1, 2, 3, 4, 5]
+for num in nums:
+    if num % 2 != 0:
+        x += num
+print(x)
+# Solución: 9
+
+z = 0
+nums = [1, 2, 3, 4]
+for num in nums:
+    z += num ** 2
+# Resultado = 1 + 4 + 9 + 16 = 30
+
+
+
+x = 0
+nums = [5, 10, 15, 20, 30]
+for num in nums:
+    if num % 10 == 0:
+        x += num
+print(x)
+# Resultado: 60 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
