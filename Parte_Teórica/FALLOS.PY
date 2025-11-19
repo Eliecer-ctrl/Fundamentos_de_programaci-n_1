@@ -56,7 +56,7 @@ nums = [2, 4, 6, 8, 10]
 for num in nums:
     x += num // 2
 print(x)
-Solución:  1 + 2 + 3 + 4 + 5 = 15
+# Solución:  1 + 2 + 3 + 4 + 5 = 15
 
 
 
@@ -95,31 +95,87 @@ print(x)
 
 
 
+a = [5, 7, 9]
+b = [5, 7, 2, 6]
+# Solución: La lista a es más grande porque los elementos dentro de la lista a es más grande que los elementos dentro de la lista b.
 
 
 
 
+def func(s):
+    if len(s) == 0:
+        return 0
+    else:
+        if type(s[-1]) == int:
+            return func(s[0:-1]) + s[-1]
+        else:
+            return func(s[0:-1])
+# Resultado: Si el último elemento de la lista es de tipo int, suma los elementos en el rango + el último elemento 
 
 
 
+# si a = 8 y b = 15 ¿Qué resultado devuelve la siguiente función?
+
+def func(a, b):
+    if a == 0:
+        return 0
+    if a % 2 != 0:
+        return func(a // 2, b * 2)
+    return func(a // 2, b * 2)
+#Solución: (4, 30) (2, 60) (0, 120) (0)
+
+
+#si a = 8 y b = 15 ¿Qué resultado devuelve la siguiente función?
+
+def func(a, b):
+    if a == 0:
+        return 0
+    if a % 2 != 0:
+        return b + func(a // 2, b * 2)
+    return func(a // 2, b * 2)
+# Resultado: 120
+
+# si s = [0, 2, 1, 3, 0, -4, 5] ¿Qué resultado devuelve la siguiente función?
+
+def func(s):
+    a = (0, 0)
+    if len(s) > 0:
+        a = func(s[1:])
+        if s[0] > 0:
+            a =  (1 + a[0], a[1])
+        else:
+            a = (a[0], 1 + a[1])
+    return a
+
+#Solución: a = (0,0) --> (0,1) (1, 1) (2, 1) (3, 1) (3, 2) (3, 3) (4, 3)
 
 
 
+x = True
+y = True
+z = False
+
+print(not x and (y or not z and True))
+# Solucion: False --> and --> 2true or --> 1true
 
 
 
+y = 1
+for i in range(4):
+    y *= i
+    i += 1
+# Solución: 0
 
 
-
-
-
-
-
-
-
-
-
-
+x = 0
+y = 1
+i = 0
+while i < 4:
+    x += y
+    y *= 2
+    i += 1
+print(x)
+# x = 1 y = 2  x = 3 y = 4 x = 7 y = 8 x = 15 y = 16
 
 
 
