@@ -1,7 +1,12 @@
-def no_empty_lines(texto1, texto2):
-    with open(texto1, 'r') as f:
-        lines = f.readlines()
-    with open(texto2, 'w') as f:
-        for line in lines:
-            if not line.isspace():
-                f.write(line)
+import csv
+
+def read_csv_selecting_fields(file_name, fields_selected):
+    data = []
+    with open(file_name, 'r') as csvfile:
+        csvreader = csv.reader(csvfile)
+        fieldnames = next(csvreader)
+        fields_selected_indices = [fieldnames.index(field) for field in fields_selected]
+        for row in csvreader:
+            selected_row = [row[i] for i in fields_selected_indices]
+            data.append(selected_row)
+    return data
