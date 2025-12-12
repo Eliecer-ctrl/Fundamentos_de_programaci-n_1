@@ -15,3 +15,16 @@ def combine(tupla1, tupla2):
             fila.append(suma)
         lista_final.append(fila)
     return lista_final
+
+# Repaso
+from parte2 import expand
+
+
+def combine(tupla1, tupla2):
+    matriz1 = expand(tupla1, tupla2)
+    matriz2 = expand(tupla2, tupla1)
+    corta = min(len(matriz1), len(matriz2))
+    for i in range(corta):
+        fila = []
+        for j in range(corta):
+            suma = matriz1[i][j] + matriz2[i][j]

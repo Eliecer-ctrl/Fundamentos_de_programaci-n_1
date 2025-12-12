@@ -8,3 +8,15 @@ def expand(tupla1, tupla2):
         fila = make_list(tupla2, x)
         lista.append(fila)
     return lista
+
+
+# Repaso
+from parte1 import make_list
+
+
+def expand(tupla1, tupla2):
+    lista = []
+    for x in tupla1:
+        fila = make_list(tupla2, x)
+        lista.append(fila)
+    return lista

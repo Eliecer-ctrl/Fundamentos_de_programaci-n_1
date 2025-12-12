@@ -14,3 +14,12 @@ def normalizar(tupla):
         return(a, b)
 # Se desarrolla una función que tome como parametro una tupla con dos numeros que representa el numerador y el denominador
 # Se comprueba que el numerador siempre sea el más grande 
+
+# Repaso
+def normalizar(tupla):
+    numerador = tupla[0]
+    denominador = tupla[1]
+    if numerador >= denominador:
+        resultado = mcd(numerador, denominador)
+    else:
+        resultado = mcd(denominador, numerador)
