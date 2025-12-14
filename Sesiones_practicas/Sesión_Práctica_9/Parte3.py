@@ -10,3 +10,5 @@ def procesar_imagen(matriz):
     dc["grises"] = grises
     dc["negativo"] = nega
     return dc
+
+

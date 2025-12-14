@@ -1,12 +1,10 @@
-import re
+from Parte1 import norm_mat
 
-
-def norm_mat(texto):
-    condicion = r"(\d{4})[- ]?([A-Z]{3})$"
-    match = re.fullmatch(condicion, texto)
-    if match:
-        digitos = match.group(1)
-        letras = match.group(2)
-        return f"{digitos}-{letras}"
-    else:
-        return False
+def check_car_data(texto):
+    lista = texto.split(';')
+    if len(lista) != 6:
+        return texto
+    normalizar = norm_mat(lista[0])
+    if lista[3] != "combustión" or lista[3] != "híbrido" or lista[3] != "eléctrico":
+        return texto
+    return lista

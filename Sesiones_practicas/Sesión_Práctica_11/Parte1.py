@@ -10,3 +10,5 @@ def validate_formula(formula):
 # (   )--> Grupo de captura   +--> una o más repeticiones del elemento anterior 
 # [A-Z] -->  letras mayúsculas  [a-z] --> Letras en minúsculas que realmente no hace falta ya que las formulas van a estar en mayúsculas
 # ? --> cero o una mas ocurrencias [1-9]--> primer dígito del subíndice
+
+

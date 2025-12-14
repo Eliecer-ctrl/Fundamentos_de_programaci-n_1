@@ -1,4 +1,4 @@
-from parte1 import completar_dni
+from Parte1 import completar_dni
 
 
 def matrícula(datos_academicos, dni):
